@@ -1,0 +1,848 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Stack Web Development Services | Hafiz Abdullah Rabbani</title>
+  <meta name="description"
+    content="Complete A-Z Full-Stack Web Development Services — HTML5, CSS3, JavaScript, React.js, Tailwind CSS, Node.js, Express.js, PHP, MySQL, MongoDB, REST APIs, Security, SEO & Deployment.">
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="Full-Stack Web Developer, React.js Developer, Node.js Developer, PHP Web Development, Custom Web App Development Islamabad, Hafiz Abdullah Rabbani">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rabbani.dev/web-development.html">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rabbani.dev/web-development.html">
+  <meta property="og:title" content="Full-Stack Web Development Services | Hafiz Abdullah Rabbani">
+  <meta property="og:description" content="Complete A-Z Full-Stack Web Engineering — React.js, Tailwind CSS, Node.js, Express, PHP, MySQL, MongoDB, REST APIs, Security & Cloud Deployment.">
+  <meta property="og:image" content="https://rabbani.dev/profile_work.jpg">
+  <meta property="og:site_name" content="Hafiz Abdullah Rabbani Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Full-Stack Web Developer | Hafiz Abdullah Rabbani">
+  <meta name="twitter:description" content="End-to-end modern web applications built for speed, security, responsiveness, and scalable growth.">
+  <meta name="twitter:image" content="https://rabbani.dev/profile_work.jpg">
+
+  <!-- Resource Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- JSON-LD Schema Markup (SEO, AEO & GEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://rabbani.dev/#person",
+        "name": "Hafiz Abdullah Rabbani",
+        "jobTitle": "Full-Stack Web Developer"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rabbani.dev/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Web Development",
+            "item": "https://rabbani.dev/web-development.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What web technologies do you work with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I specialize in Frontend (HTML5, CSS3, JavaScript, React.js, Tailwind CSS), Backend (Node.js, Express.js, PHP), Databases (MySQL, MongoDB), REST APIs, Technical SEO, Security, and Cloud Deployment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the websites mobile responsive and fast?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, 100% of websites are built mobile-first, performance-optimized for 90+ Google PageSpeed scores, and fully responsive across all device breakpoints."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="loader-img-wrapper">
+      <div class="loader-spinner"></div><img src="profile_work.jpg" alt="Hafiz Abdullah Rabbani"
+        class="loader-profile-img">
+    </div>
+    <div class="loader-text">Web Development</div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+  <div class="ambient"></div>
+  <div id="particles-js"></div>
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation / Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AR<span>.</span></a>
+
+      <!-- Single Compact Responsive Contact / Action Bar (Mobile: Bottom Floating Bar | Desktop: Top Header Bar) -->
+      <nav class="compact-action-bar" id="compactActionBar" aria-label="Contact and Action Bar">
+        <!-- 1. WhatsApp -->
+        <a href="https://wa.me/923477128889?text=Hi%20Abdullah,%20I'd%20like%20to%20discuss%20a%20web%20development%20project." 
+           target="_blank" rel="noopener noreferrer" 
+           class="action-pill-btn act-whatsapp" 
+           id="actionBarWa" 
+           aria-label="WhatsApp">
+          <svg class="pill-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.08 7.1 8.84 7.36C8.6 7.62 7.92 8.25 7.92 9.55C7.92 10.85 8.86 12.1 9 12.28C9.13 12.46 10.72 14.92 13.16 15.97C13.74 16.22 14.19 16.37 14.54 16.48C15.12 16.67 15.66 16.64 16.08 16.58C16.54 16.51 17.52 15.99 17.73 15.41C17.93 14.83 17.93 14.33 17.87 14.23C17.81 14.13 17.65 14.07 17.41 13.95C17.17 13.83 15.99 13.25 15.77 13.17C15.55 13.09 15.39 13.05 15.23 13.29C15.07 13.53 14.61 14.07 14.47 14.23C14.33 14.39 14.19 14.41 13.95 14.29C13.71 14.17 12.93 13.92 12.01 13.1C11.29 12.46 10.81 11.67 10.67 11.43C10.53 11.19 10.65 11.06 10.77 10.94C10.88 10.83 11.02 10.65 11.14 10.51C11.26 10.37 11.3 10.27 11.38 10.11C11.46 9.95 11.42 9.81 11.36 9.69C11.3 9.57 10.84 8.43 10.65 7.96C10.46 7.5 10.27 7.56 10.13 7.56C10 7.56 9.84 7.55 9.68 7.55C9.53 7.55 9.29 7.61 9.09 7.83"/>
+          </svg>
+          <span class="pill-label">WhatsApp</span>
+        </a>
+
+        <!-- 2. Call -->
+        <a href="tel:+923477128889" 
+           class="action-pill-btn act-call" 
+           id="actionBarCall" 
+           aria-label="Direct Phone Call">
+          <svg class="pill-svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+          </svg>
+          <span class="pill-label">Call</span>
+        </a>
+
+        <!-- 3. Hire Me / Consult (Highlighted Gold Active Pill) -->
+        <a href="#hire" 
+           class="action-pill-btn act-hire gold-pill-highlight" 
+           id="actionBarHire" 
+           aria-label="Hire Me / Quick Consultation">
+          <svg class="pill-svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+            <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+          </svg>
+          <span class="pill-label">Hire Me</span>
+        </a>
+
+        <!-- 4. More / Menu -->
+        <button class="action-pill-btn act-more" 
+                id="actionBarMore" 
+                type="button"
+                aria-label="More Navigation Menu">
+          <svg class="pill-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+          <span class="pill-label">More</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <i class="fas fa-chevron-right"></i>
+    <span>Full-Stack Web Development</span>
+  </div>
+
+  <!-- ══ CINEMATIC HERO SECTION ═════════════════════════════════════════════════ -->
+  <section class="cinematic-hero-section" id="hero">
+    <!-- Cinematic Video & Dynamic Canvas Background -->
+    <div class="cinematic-bg-container">
+      <video class="cinematic-video-bg" autoplay muted loop playsinline poster="project1.png">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-screens-with-charts-and-data-31912-large.mp4" type="video/mp4">
+      </video>
+      <canvas id="cinematicCanvas" class="cinematic-canvas-overlay"></canvas>
+      <div class="cinematic-vignette-overlay"></div>
+      <div class="cinematic-light-streak"></div>
+    </div>
+
+    <!-- Hero Content Grid -->
+    <div class="cinematic-hero-grid">
+      <div class="cinematic-hero-content">
+        <!-- Developer Badge -->
+        <div class="agency-pill-badge">
+          <span class="badge-live-pulse"></span>
+          <span>✦ FULL-STACK WEB ENGINEERING</span>
+          <span class="badge-gold-text">• FAST &amp; SECURE</span>
+        </div>
+
+        <div class="hero-name-tag">Hafiz Abdullah Rabbani</div>
+
+        <h1 class="cinematic-hero-title">
+          ARCHITECTING <span class="gradient-cinematic-text dynamic-rotating-text" data-words='["HIGH-PERFORMANCE", "SCALABLE FULL-STACK", "ENTERPRISE-GRADE", "CONVERSION-DRIVEN"]'>HIGH-PERFORMANCE</span> <span class="gradient-cyber-text">WEB APPLICATIONS</span>.
+        </h1>
+
+        <p class="cinematic-lead">
+          End-to-end full-stack engineering from modern UI/UX architecture, responsive frontend, robust REST APIs, and databases to cloud deployment, technical SEO, and enterprise security.
+        </p>
+
+        <!-- Tech Badges -->
+        <div class="cinematic-chips-wrap">
+          <span class="c-chip"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="c-chip"><i class="fab fa-css3-alt"></i> CSS3</span>
+          <span class="c-chip"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="c-chip"><i class="fab fa-react"></i> React.js</span>
+          <span class="c-chip"><i class="fas fa-wind"></i> Tailwind CSS</span>
+          <span class="c-chip"><i class="fab fa-node-js"></i> Node.js</span>
+          <span class="c-chip"><i class="fas fa-server"></i> Express.js</span>
+          <span class="c-chip"><i class="fab fa-php"></i> PHP &amp; MySQL</span>
+          <span class="c-chip"><i class="fas fa-database"></i> MongoDB</span>
+          <span class="c-chip"><i class="fas fa-shield-alt"></i> Web Security</span>
+          <span class="c-chip"><i class="fas fa-cloud-upload-alt"></i> Cloud Deployment</span>
+          <span class="c-chip"><i class="fab fa-git-alt"></i> Git &amp; CI/CD</span>
+        </div>
+
+        <!-- Dual Magnetic Hero CTA Buttons -->
+        <div class="cinematic-cta-group">
+          <a href="https://wa.me/923477128889?text=Hi%20Abdullah,%20I'd%20like%20to%20discuss%20a%20Web%20Development%20project." 
+             target="_blank" rel="noopener noreferrer" 
+             class="btn-cinematic-primary">
+            <i class="fab fa-whatsapp"></i>
+            <span>Start Web Project</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#hire" class="btn-cinematic-secondary">
+            <i class="fas fa-laptop-code"></i>
+            <span>Request Architecture Plan</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Column — 3D Futuristic Orbit Frame -->
+      <div class="cinematic-visual-col">
+        <div class="cinematic-profile-orbit">
+          <div class="orbit-glow-ring"></div>
+          <div class="orbit-glow-ring-2"></div>
+          <img src="profile_work.jpg" alt="Hafiz Abdullah Rabbani – Full-Stack Web Developer" class="cinematic-profile-img">
+
+          <!-- Floating Live Badge: Top-Left -->
+          <div class="floating-agency-badge badge-top-left">
+            <div class="badge-icon-box"><i class="fas fa-bolt"></i></div>
+            <div>
+              <div class="badge-info-title">Performance Score</div>
+              <div class="badge-info-value">99+ Google CWV</div>
+            </div>
+          </div>
+
+          <!-- Floating Live Badge: Bottom-Right -->
+          <div class="floating-agency-badge badge-bottom-right">
+            <div class="badge-icon-box"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <div class="badge-info-title">Code Standards</div>
+              <div class="badge-info-value">Enterprise Grade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="home-stats">
+    <div class="stats-bar" style="max-width:950px;margin:0 auto;">
+      <div class="stat-item glass-card reveal"><span class="stat-num" data-count="60" data-suffix="+">0+</span><span
+          class="stat-label">Websites Developed</span></div>
+      <div class="stat-item glass-card reveal"><span class="stat-num" data-count="99" data-suffix="%">0%</span><span
+          class="stat-label">Speed &amp; Security Score</span></div>
+      <div class="stat-item glass-card reveal"><span class="stat-num" data-count="100" data-suffix="%">0%</span><span
+          class="stat-label">Responsive &amp; Mobile First</span></div>
+      <div class="stat-item glass-card reveal"><span class="stat-num" data-count="5" data-suffix="+">0+</span><span
+          class="stat-label">Years Experience</span></div>
+    </div>
+  </div>
+
+  <!-- ══ WORKFLOW TIMELINE ═════════════════════════════════════════════════════════ -->
+  <section class="section section-alt">
+    <div class="section-header">
+      <div class="section-eyebrow">Development Methodology</div>
+      <h2 class="section-title">Complete <span>Web Workflow</span></h2>
+      <p class="section-desc">A structured, 14-stage engineering process ensuring reliable execution from concept to
+        deployment and scaling.</p>
+    </div>
+    <div class="workflow-strip">
+      <div class="wf-step"><span>01</span> Requirement Analysis</div>
+      <div class="wf-step"><span>02</span> Planning &amp; Sitemap</div>
+      <div class="wf-step"><span>03</span> UI/UX Architecture</div>
+      <div class="wf-step"><span>04</span> Frontend Dev</div>
+      <div class="wf-step"><span>05</span> Backend Dev</div>
+      <div class="wf-step"><span>06</span> Database Design</div>
+      <div class="wf-step"><span>07</span> API Integration</div>
+      <div class="wf-step"><span>08</span> Authentication</div>
+      <div class="wf-step"><span>09</span> Comprehensive Testing</div>
+      <div class="wf-step"><span>10</span> Technical SEO</div>
+      <div class="wf-step"><span>11</span> Performance Tuning</div>
+      <div class="wf-step"><span>12</span> Security Hardening</div>
+      <div class="wf-step"><span>13</span> Deployment &amp; SSL</div>
+      <div class="wf-step"><span>14</span> Ongoing Maintenance</div>
+    </div>
+  </section>
+
+  <!-- ══ SERVICES / CATEGORIES ═════════════════════════════════════════════════════ -->
+  <section class="section" id="services">
+    <div class="section-header">
+      <div class="section-eyebrow">Full-Stack Capabilities</div>
+      <h2 class="section-title">A–Z <span>Web Development</span> Services</h2>
+      <p class="section-desc">Deep technical expertise across every operational layer of modern web applications.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <!-- 1. Planning -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-sitemap"></i></div>
+        <div>
+          <h4>Website Planning &amp; Architecture</h4>
+          <p>Requirement analysis, sitemap creation, database schema design, technical architecture design, responsive
+            layout strategy, performance planning, and SEO blueprinting.</p>
+        </div>
+      </div>
+
+      <!-- 2. Frontend -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fab fa-html5"></i></div>
+        <div>
+          <h4>Frontend Development</h4>
+          <p>Pixel-perfect HTML5, modern CSS3, vanilla JavaScript, mobile-first responsive web design, interactive
+            components, dynamic form validation, CSS animations, landing pages, and dashboard UIs.</p>
+        </div>
+      </div>
+
+      <!-- 3. Modern Frontend Tech -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fab fa-react"></i></div>
+        <div>
+          <h4>Modern Frontend Tech (React &amp; Tailwind)</h4>
+          <p>Single Page Applications (SPAs) with React.js, component-based modular architecture, Tailwind CSS styling,
+            Redux/Context state management, API integration, and dynamic interface rendering.</p>
+        </div>
+      </div>
+
+      <!-- 4. Backend Development -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fab fa-node-js"></i></div>
+        <div>
+          <h4>Backend Development (Node, Express &amp; PHP)</h4>
+          <p>Scalable server-side logic using Node.js, Express.js, and PHP. Building robust RESTful APIs, authentication
+            engines, authorization middleware, user management systems, and admin panels.</p>
+        </div>
+      </div>
+
+      <!-- 5. Database Development -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-database"></i></div>
+        <div>
+          <h4>Database Architecture (MySQL &amp; MongoDB)</h4>
+          <p>Relational (MySQL) and NoSQL (MongoDB) database design, normalized schema architecture, CRUD operations,
+            query optimization, indexing, data validation, and secure data handling.</p>
+        </div>
+      </div>
+
+      <!-- 6. API & Integrations -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-plug"></i></div>
+        <div>
+          <h4>API &amp; Third-Party Integration</h4>
+          <p>Integrating Stripe/PayPal payment gateways, OAuth authentication APIs, WhatsApp API, Google Maps, Twilio
+            SMS, SendGrid email services, social media logins, and webhooks.</p>
+        </div>
+      </div>
+
+      <!-- 7. eCommerce Development -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-shopping-cart"></i></div>
+        <div>
+          <h4>eCommerce Development</h4>
+          <p>Complete custom online stores with product management, categories, shopping cart, multi-step checkout,
+            order tracking, customer accounts, wishlists, search filters, coupons, and inventory sync.</p>
+        </div>
+      </div>
+
+      <!-- 8. Admin Dashboards -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-tachometer-alt"></i></div>
+        <div>
+          <h4>Admin Dashboard Development</h4>
+          <p>Custom admin portals featuring role-based access control (RBAC), user &amp; product management, sales
+            analytics dashboards, CRUD tables, inventory tracking, export reports, and system notifications.</p>
+        </div>
+      </div>
+
+      <!-- 9. Security -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+        <div>
+          <h4>Authentication &amp; Web Security</h4>
+          <p>Secure login/registration, JWT &amp; session auth, bcrypt password hashing, input sanitization against XSS
+            and SQL Injection, CORS policies, rate limiting, and SSL/HTTPS enforcement.</p>
+        </div>
+      </div>
+
+      <!-- 10. Technical SEO -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-search-location"></i></div>
+        <div>
+          <h4>Website SEO &amp; Analytics</h4>
+          <p>Technical SEO, clean URL structures, semantic HTML5, dynamic Meta Titles &amp; Descriptions, OpenGraph
+            tags, XML sitemaps, robots.txt, Google Analytics 4, and Search Console integration.</p>
+        </div>
+      </div>
+
+      <!-- 11. Performance Optimization -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-bolt"></i></div>
+        <div>
+          <h4>Performance &amp; Speed Optimization</h4>
+          <p>Google Core Web Vitals optimization, asset minification, image WebP conversion, lazy loading, browser
+            caching strategies, database query tuning, and CDN deployment.</p>
+        </div>
+      </div>
+
+      <!-- 12. Deployment & Hosting -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-cloud-upload-alt"></i></div>
+        <div>
+          <h4>Deployment &amp; Cloud Hosting</h4>
+          <p>Production deployment on Netlify, Vercel, VPS, or cPanel. Git &amp; GitHub CI/CD setup, custom domain
+            mapping, DNS configuration, SSL installation, and zero-downtime server migration.</p>
+        </div>
+      </div>
+
+      <!-- 13. Maintenance & Testing -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-vial"></i></div>
+        <div>
+          <h4>Testing, QA &amp; Maintenance</h4>
+          <p>Cross-browser compatibility testing, responsive viewport checks, API endpoint validation, functional form
+            testing, bug debugging, emergency hotfixes, and scheduled updates.</p>
+        </div>
+      </div>
+
+      <!-- 14. Custom Web Apps -->
+      <div class="feature-item reveal">
+        <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+        <div>
+          <h4>Custom Web Applications</h4>
+          <p>Building tailored SaaS platforms, business websites, portfolio portals, custom eCommerce systems, web
+            dashboards, blogs, and interactive client portals built to exact specifications.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ WEBSITE TYPES SERVED ═════════════════════════════════════════════════════ -->
+  <section class="section section-alt">
+    <div class="section-header">
+      <div class="section-eyebrow">Solutions Built</div>
+      <h2 class="section-title">Websites &amp; <span>Applications</span> I Build</h2>
+    </div>
+    <div class="services-grid">
+      <div class="glass-card reveal" style="text-align:center;">
+        <div class="icon-box" style="margin:0 auto 1rem;"><i class="fas fa-briefcase"></i></div>
+        <h4>Business Websites</h4>
+        <p style="font-size:.88rem;color:var(--text-muted);">Corporate &amp; agency websites designed for lead
+          generation and credibility.</p>
+      </div>
+      <div class="glass-card reveal" style="text-align:center;">
+        <div class="icon-box" style="margin:0 auto 1rem;"><i class="fas fa-user-astronaut"></i></div>
+        <h4>Portfolio Websites</h4>
+        <p style="font-size:.88rem;color:var(--text-muted);">Interactive personal branding websites for professionals
+          &amp; creatives.</p>
+      </div>
+      <div class="glass-card reveal" style="text-align:center;">
+        <div class="icon-box" style="margin:0 auto 1rem;"><i class="fas fa-store"></i></div>
+        <h4>eCommerce Stores</h4>
+        <p style="font-size:.88rem;color:var(--text-muted);">Full-featured online shopping platforms with checkout &amp;
+          order tracking.</p>
+      </div>
+      <div class="glass-card reveal" style="text-align:center;">
+        <div class="icon-box" style="margin:0 auto 1rem;"><i class="fas fa-rocket"></i></div>
+        <h4>SaaS &amp; Web Apps</h4>
+        <p style="font-size:.88rem;color:var(--text-muted);">Complex web applications with auth, dashboards, and
+          subscription APIs.</p>
+      </div>
+      <div class="glass-card reveal" style="text-align:center;">
+        <div class="icon-box" style="margin:0 auto 1rem;"><i class="fas fa-columns"></i></div>
+        <h4>Admin Dashboards</h4>
+        <p style="font-size:.88rem;color:var(--text-muted);">Internal management software with real-time stats, RBAC
+          &amp; CRUD tools.</p>
+      </div>
+      <div class="glass-card reveal" style="text-align:center;">
+        <div class="icon-box" style="margin:0 auto 1rem;"><i class="fas fa-bullhorn"></i></div>
+        <h4>High-Converting Landing Pages</h4>
+        <p style="font-size:.88rem;color:var(--text-muted);">Fast-loading campaign landing pages built for PPC and lead
+          generation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHY CHOOSE ME ══════════════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">The Engineering Edge</div>
+      <h2 class="section-title">Why Work With <span>Me?</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card glass-card reveal">
+        <div class="icon-box"><i class="fas fa-code-branch"></i></div>
+        <h4>Clean &amp; Maintainable Code</h4>
+        <p>Modular, well-commented codebase built following industry standard conventions.</p>
+      </div>
+      <div class="why-card glass-card reveal">
+        <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+        <h4>100% Mobile Responsive</h4>
+        <p>Tested on all mobile screen sizes, tablets, and high-DPI desktop viewports.</p>
+      </div>
+      <div class="why-card glass-card reveal">
+        <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+        <h4>Security First</h4>
+        <p>Protected against OWASP Top 10 vulnerabilities including XSS, SQLi, and CSRF.</p>
+      </div>
+      <div class="why-card glass-card reveal">
+        <div class="icon-box"><i class="fas fa-tachometer-alt"></i></div>
+        <h4>High PageSpeed Score</h4>
+        <p>Engineered for 90+ Lighthouse speed scores and optimal Core Web Vitals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIALS (6+ REVIEWS AS REQUESTED!) ═══════════════════════════════════ -->
+  <section class="section section-alt" id="testimonials">
+    <div class="section-header">
+      <div class="section-eyebrow">Client Reviews</div>
+      <h2 class="section-title">Web Dev Client <span>Feedback</span></h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="testimonial-card glass-card reveal">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-quote">He built our custom SaaS admin portal with React and Node.js. Clean architecture,
+          ultra fast loading, and flawless API integration!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"><i class="fas fa-code"></i></div>
+          <div class="testimonial-info"><strong>Jason K.</strong><span>Tech Startup Founder — USA</span></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass-card reveal">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-quote">Our company website loading speed improved from 4.8s to 0.9s! Core Web Vitals are
+          all green and Google rankings went up within weeks.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"><i class="fas fa-bolt"></i></div>
+          <div class="testimonial-info"><strong>Claire M.</strong><span>Agency Director — UK</span></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass-card reveal">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-quote">Built our entire custom eCommerce platform with PHP, MySQL, Stripe payments, and
+          WhatsApp order notifications. Flawless work!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"><i class="fas fa-shopping-cart"></i></div>
+          <div class="testimonial-info"><strong>Tariq S.</strong><span>E-Commerce Business Owner</span></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass-card reveal">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-quote">Extremely reliable developer! Clean code, 100% mobile responsive layout, and
+          deployed seamlessly on Vercel with zero downtime.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"><i class="fas fa-laptop-code"></i></div>
+          <div class="testimonial-info"><strong>David L.</strong><span>Digital Agency Lead</span></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass-card reveal">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-quote">The custom REST API and MongoDB database setup he engineered handles thousands of
+          requests smoothly without a glitch.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"><i class="fas fa-database"></i></div>
+          <div class="testimonial-info"><strong>Robert P.</strong><span>App Product Manager</span></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass-card reveal">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-quote">He converted our Figma designs into pixel-perfect React &amp; Tailwind components.
+          Highly professional communication and top quality.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"><i class="fab fa-react"></i></div>
+          <div class="testimonial-info"><strong>Samantha V.</strong><span>UX Lead — Canada</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ CTA / HIRE ME ══════════════════════════════════════════════════════════════ -->
+  <section class="cta-section" id="hire">
+    <div class="section-eyebrow" style="margin-bottom:1rem;">Ready to Build Your Web Project?</div>
+    <h2>Let's Build Your <span
+        style="background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Next
+        Web Application</span></h2>
+    <p>From custom corporate websites to complex full-stack web applications — I deliver scalable, secure, and beautiful
+      digital products.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/923477128889?text=Hi! I need Full-Stack Web Development services." target="_blank" rel="noopener noreferrer"
+        class="btn btn-gold btn-lg"><i class="fab fa-whatsapp"></i> Hire Me on WhatsApp</a>
+      <a href="mailto:rabbaniabdullah333@gmail.com?subject=Web Development Inquiry" class="btn btn-outline btn-lg"><i
+          class="fas fa-envelope"></i> Send Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.8rem;">AR<span style="color:var(--text);">.</span></div>
+        <p>Full-Stack Web Developer, Amazon VA, eBay, Shopify, and Graphic Design freelancer based in Islamabad,
+          Pakistan.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/923477128889" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:rabbaniabdullah333@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="digital-marketing.html">Digital Marketing</a>
+        <a href="web-development.html">Web Development</a>
+        <a href="amazon.html">Amazon VA</a>
+        <a href="ebay.html">eBay Management</a>
+        <a href="graphic-designing.html">Graphic Design</a>
+        <a href="shopify.html">Shopify Dev</a>
+      </div>
+      <div class="footer-col">
+        <h5>Stack</h5>
+        <a href="#services">React.js &amp; Tailwind</a>
+        <a href="#services">Node.js &amp; Express</a>
+        <a href="#services">PHP &amp; MySQL</a>
+        <a href="#services">MongoDB &amp; REST APIs</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item"><i class="fab fa-whatsapp"></i> +92 347 7128889</div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i> rabbaniabdullah333@gmail.com</div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Hafiz Abdullah Rabbani. All Rights Reserved.</span>
+      <span><a href="index.html" style="color:var(--gold);">← Back to Home</a></span>
+    </div>
+  </footer>
+
+  <!-- ═════════════════════════════════════════════════════════════════════════
+       IN-APP CV / RESUME MODAL VIEWER
+  ══════════════════════════════════════════════════════════════════════════ -->
+  <div class="cv-modal-backdrop" id="cvModalBackdrop">
+    <div class="cv-modal-window" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+      <div class="cv-modal-header">
+        <div class="cv-header-title-box">
+          <h3 id="cvModalTitle">Curriculum Vitae</h3>
+          <span class="cv-subtitle">Hafiz Abdullah Rabbani</span>
+        </div>
+        <div class="cv-header-actions">
+          <button class="cv-action-btn" id="printCvBtn" title="Print Resume" aria-label="Print CV"><i class="fas fa-print"></i></button>
+          <button class="cv-action-btn" id="modalDownloadCvBtn" title="Download Resume" aria-label="Download CV"><i class="fas fa-download"></i></button>
+          <button class="cv-close-btn" id="cvModalCloseBtn" aria-label="Close CV Viewer"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+
+      <div class="cv-modal-content" id="cvPrintableArea">
+        <div class="resume-header">
+          <div class="resume-avatar-frame">
+            <img src="profile_work.jpg" alt="Hafiz Abdullah Rabbani">
+          </div>
+          <div class="resume-title-block">
+            <h2>Hafiz Abdullah Rabbani</h2>
+            <div class="resume-job-title">Full-Stack Web Developer &amp; Digital Growth Specialist</div>
+            <div class="resume-contact-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</span>
+              <span><i class="fas fa-phone"></i> +92 347 7128889</span>
+              <span><i class="fas fa-envelope"></i> rabbaniabdullah333@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title"><i class="fas fa-user"></i> Professional Summary</h4>
+          <p class="resume-p">
+            Dynamic and results-driven specialist with 5+ years of cross-functional experience across Full-Stack Web Development, Data-Driven Performance Marketing (SEO, Google Ads, Meta Ads), Marketplace Store Operations (Amazon FBA, eBay, Shopify), and Graphic Branding. Proven record of delivering 250+ projects globally with 99% client satisfaction.
+          </p>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title"><i class="fas fa-tools"></i> Core Technical Competencies</h4>
+          <div class="resume-skills-grid">
+            <div class="rskill-group">
+              <strong>Web Development:</strong>
+              <span>HTML5, CSS3, Vanilla JS, React.js, Node.js, Express, PHP, MySQL, MongoDB, RESTful APIs, Git</span>
+            </div>
+            <div class="rskill-group">
+              <strong>Digital Marketing &amp; Ads:</strong>
+              <span>Meta Ads, Google Ads, On-Page &amp; Technical SEO, Conversion Rate Optimization (CRO), GA4 Analytics</span>
+            </div>
+            <div class="rskill-group">
+              <strong>E-Commerce Marketplaces:</strong>
+              <span>Amazon FBA/PPC, A+ Content (EBC), Helium 10, eBay Cassini SEO, Shopify Theme Customization</span>
+            </div>
+            <div class="rskill-group">
+              <strong>Creative Design:</strong>
+              <span>Adobe Photoshop, Illustrator, Figma UI Prototyping, Brand Guidelines, High-CTR Ad Creatives</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title"><i class="fas fa-briefcase"></i> Work Experience</h4>
+          <div class="resume-timeline-entry">
+            <div class="rentry-head">
+              <strong>Senior Full-Stack Developer &amp; Growth Consultant</strong>
+              <span class="rentry-date">2023 — Present</span>
+            </div>
+            <div class="rentry-sub">Global Remote Contracts &amp; Freelance Consulting</div>
+            <ul class="rentry-bullets">
+              <li>Engineered high-performance web applications resulting in 40% faster load speeds and increased conversion rates.</li>
+              <li>Managed $150k+ in client ad budgets with average 4.2x ROAS across retail, SaaS, and lead gen funnels.</li>
+            </ul>
+          </div>
+
+          <div class="resume-timeline-entry">
+            <div class="rentry-head">
+              <strong>Digital Marketing &amp; E-Commerce Account Specialist</strong>
+              <span class="rentry-date">2021 — 2023</span>
+            </div>
+            <div class="rentry-sub">E-Commerce Agency Solutions</div>
+            <ul class="rentry-bullets">
+              <li>Optimized eBay store operations and maintained Top-Rated seller status with Cassini SEO.</li>
+              <li>Executed multi-tier PPC keyword campaigns on Amazon US/UK marketplaces, reducing ACOS by 22%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title"><i class="fas fa-graduation-cap"></i> Education &amp; Certifications</h4>
+          <div class="resume-edu-item">
+            <strong>Google Ads &amp; Google Analytics 4 Certified</strong> — Google Digital Academy
+          </div>
+          <div class="resume-edu-item">
+            <strong>Meta Certified Digital Marketing Associate</strong> — Meta Blueprint
+          </div>
+          <div class="resume-edu-item">
+            <strong>Full-Stack Web Engineering Certification</strong> — Professional Institute
+          </div>
+          <div class="resume-edu-item">
+            <strong>Hafiz-ul-Quran Certification</strong> — Quranic Memorization &amp; Studies
+          </div>
+        </div>
+
+        <div class="resume-footer-cta">
+          <a href="https://wa.me/923477128889" target="_blank" class="btn btn-gold"><i class="fab fa-whatsapp"></i> Hire Abdullah via WhatsApp</a>
+          <a href="mailto:rabbaniabdullah333@gmail.com" class="btn btn-outline"><i class="fas fa-envelope"></i> Email Directly</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════════════
+       MORE MENU DRAWER (Mobile & Desktop)
+  ══════════════════════════════════════════════════════════════════════════ -->
+  <div class="more-menu-overlay" id="moreMenuOverlay"></div>
+  <aside class="more-menu-drawer" id="moreMenuDrawer">
+    <div class="more-menu-header">
+      <div class="more-menu-brand">
+        <div class="avatar-sm">
+          <img src="profile_work.jpg" alt="Abdullah Rabbani">
+        </div>
+        <div>
+          <h4>Abdullah Rabbani</h4>
+          <p>Full-Stack &amp; Growth Expert</p>
+        </div>
+      </div>
+      <button class="more-menu-close" id="moreMenuClose" aria-label="Close Menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="more-menu-body">
+      <div class="more-status-badge">
+        <span class="pulse-indicator"></span> Available for Projects &amp; Contracts
+      </div>
+
+      <nav class="more-nav-list">
+        <a href="index.html" class="more-nav-item"><i class="fas fa-home"></i> <span>Home Profile</span></a>
+        <a href="digital-marketing.html" class="more-nav-item"><i class="fas fa-bullhorn"></i> <span>Digital Marketing A-Z</span></a>
+        <a href="web-development.html" class="more-nav-item"><i class="fas fa-laptop-code"></i> <span>Web Development</span></a>
+        <a href="amazon.html" class="more-nav-item"><i class="fab fa-amazon"></i> <span>Amazon FBA &amp; PPC</span></a>
+        <a href="ebay.html" class="more-nav-item"><i class="fas fa-store"></i> <span>eBay Store Management</span></a>
+        <a href="shopify.html" class="more-nav-item"><i class="fab fa-shopify"></i> <span>Shopify eCommerce</span></a>
+        <a href="graphic-designing.html" class="more-nav-item"><i class="fas fa-pen-nib"></i> <span>Graphic Design</span></a>
+        <a href="index.html#about" class="more-nav-item"><i class="fas fa-user-tie"></i> <span>About &amp; Story</span></a>
+        <a href="index.html#contact" class="more-nav-item"><i class="fas fa-paper-plane"></i> <span>Contact &amp; Hire</span></a>
+      </nav>
+
+      <div class="more-footer-actions">
+        <a href="https://wa.me/923477128889" target="_blank" class="btn btn-gold btn-block"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        <a href="tel:+923477128889" class="btn btn-outline btn-block"><i class="fas fa-phone"></i> Call +92 347 7128889</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Permanent Floating WhatsApp Quick Connect -->
+  <a href="https://wa.me/923477128889?text=Hi%20Abdullah,%20I'd%20like%20to%20discuss%20a%20web%20development%20project." 
+     class="permanent-wa-float" 
+     id="permanentWaBtn"
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp"
+     title="Chat with Abdullah on WhatsApp">
+    <div class="wa-float-pulse"></div>
+    <div class="wa-float-icon">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.08 7.1 8.84 7.36C8.6 7.62 7.92 8.25 7.92 9.55C7.92 10.85 8.86 12.1 9 12.28C9.13 12.46 10.72 14.92 13.16 15.97C13.74 16.22 14.19 16.37 14.54 16.48C15.12 16.67 15.66 16.64 16.08 16.58C16.54 16.51 17.52 15.99 17.73 15.41C17.93 14.83 17.93 14.33 17.87 14.23C17.81 14.13 17.65 14.07 17.41 13.95C17.17 13.83 15.99 13.25 15.77 13.17C15.55 13.09 15.39 13.05 15.23 13.29C15.07 13.53 14.61 14.07 14.47 14.23C14.33 14.39 14.19 14.41 13.95 14.29C13.71 14.17 12.93 13.92 12.01 13.1C11.29 12.46 10.81 11.67 10.67 11.43C10.53 11.19 10.65 11.06 10.77 10.94C10.88 10.83 11.02 10.65 11.14 10.51C11.26 10.37 11.3 10.27 11.38 10.11C11.46 9.95 11.42 9.81 11.36 9.69C11.3 9.57 10.84 8.43 10.65 7.96C10.46 7.5 10.27 7.56 10.13 7.56C10 7.56 9.84 7.55 9.68 7.55C9.53 7.55 9.29 7.61 9.09 7.83"/>
+      </svg>
+    </div>
+    <span class="wa-float-badge">Chat Online <span class="wa-status-dot"></span></span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

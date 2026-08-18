@@ -1,0 +1,25 @@
+# robots.txt for Hafiz Abdullah Rabbani Portfolio & Services Website
+User-agent: *
+Allow: /
+
+# AI Crawlers & Answer Engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap Location
+Sitemap: https://rabbani.dev/sitemap.xml
